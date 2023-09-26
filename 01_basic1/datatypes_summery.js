@@ -29,12 +29,34 @@ let myObj=
 const myfun =function(){
     console.log("hello world")
 }
-console.log(typeof outSideTemp) //object 
+/*console.log(typeof outSideTemp) //object 
 console.log(typeof myfun) //object function
 console.log(typeof myObj) //object
 console.log(typeof heros) //object
 console.log( typeof id) //Symbol
-
+*/
 
 // doc 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// ***************Memory manageme***********
+//Stack(primitive mean what ever data type and varibles we declare we get a copy in memory )
+let  myYT="jayanta.com"
+let anotherName=myYT
+anotherName="HostelGuy"
+//console.log(anotherName)
+//console.log(myYT)
+
+
+//Heap(Non-Primitive mean whatever data type and varibles variable or function we declare ,we get  a reference or orginal value in the memory )
+
+let user1 ={
+    email:"user1@gmail.com",
+    upi:"user132@ybl"
+}
+let user2=user1
+user2.email="haya@gamail.com"
+console.log(user2.email)
+console.log(user1.email)
